@@ -8,6 +8,7 @@ COPY tasks /opt/snap/tasks
 
 VOLUME /opt/snap/plugins
 VOLUME /opt/snap/tasks
+VOLUME /opt/snap/files
 
 WORKDIR /opt/snap/
 
