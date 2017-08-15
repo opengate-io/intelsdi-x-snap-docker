@@ -1,0 +1,15 @@
+---
+  version: 1
+  schedule:
+    type: "simple"
+    interval: "1s"
+    count: 1
+  max-failures: 10
+  workflow:
+    collect:
+      metrics:
+        /intel/psutil/load/*: {}
+      publish:
+        - plugin_name: "cassandra"
+          config:
+            server: "cassandra-database"
