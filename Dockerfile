@@ -16,4 +16,4 @@ WORKDIR /opt/snap/
 
 EXPOSE 8181
 
-CMD /usr/local/bin/init_snap && /opt/snap/sbin/snapteld --config /opt/snap/config/snapd.json -t ${SNAP_TRUST_LEVEL} -l ${SNAP_LOG_LEVEL} -o ''
+CMD /usr/local/bin/init_snap && /opt/snap/sbin/snapteld --config /opt/snap/config/snapd.conf -t ${SNAP_TRUST_LEVEL} -l ${SNAP_LOG_LEVEL} -o ''
