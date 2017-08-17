@@ -7,6 +7,7 @@ COPY conf/config.json /opt/snap/config.json
 COPY plugins /opt/snap/plugins
 COPY tasks /opt/snap/tasks
 
+VOLUME /opt/snap/config.json
 VOLUME /opt/snap/plugins
 VOLUME /opt/snap/tasks
 VOLUME /opt/snap/files
